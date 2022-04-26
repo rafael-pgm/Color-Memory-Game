@@ -1,0 +1,80 @@
+body{
+    margin: 0;
+    margin-left: 10px;
+    background-color: rgb(153, 153, 242);
+}
+
+.mainGame{
+    height: 70vh;
+    width: 70vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button{
+    border-radius: 3px;
+    display: flex;
+    position: rlative;  
+}
+
+.score{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.colorMemoryGame{
+    display: grid;
+    grid-template-areas: 'greengta redgta' 'yellowgta bluegta';
+    grid-gap: 3px;
+    border: 2px solid rgb(153, 153, 242, 0.5);
+    background-color: rgb(153, 153, 242, 0.5);
+    border-radius: 100%;
+    width: 500px;
+    height: 500px;
+    cursor: pointer;    
+}
+
+.blue{
+    grid-area: bluegta;
+    background-color:blue;
+    border-bottom-right-radius: 100%;
+}
+
+.blue:hover {
+    opacity: 0.5;
+}
+
+.red{
+    grid-area: redgta;
+    background-color:red;
+    border-top-right-radius: 100%;
+}
+
+.red:hover {
+    opacity: 0.5;
+}
+
+.green{
+    grid-area: greengta;
+    background-color:green;
+    border-top-left-radius: 100%;
+}
+
+.green:hover {
+    opacity: 0.5;
+}
+
+.yellow{
+    grid-area: yellowgta;
+    background-color:yellow;
+    border-bottom-left-radius: 100%;
+}
+
+.yellow:hover {
+    opacity: 0.5;
+}
+
+.selected{
+    opacity: 0.3;
+}
